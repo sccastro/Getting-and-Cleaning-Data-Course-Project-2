@@ -204,7 +204,8 @@ baltem <- NEI %>%
 then we plot it.
 
 ```r
-library(ggplorequire- ggplot(data=baltem, aes(as.factor(year), y=emissions)) + 
+require(ggplot2)
+p5<- ggplot(data=baltem, aes(as.factor(year), y=emissions)) + 
   geom_bar(stat="identity") + 
   ggtitle("Motor Vehicle-Related \n Emissions by Year \n for Baltimore") + 
   ylab("Emissions") + theme_minimal() + guides(fill=FALSE) + xlab("Year")
@@ -213,7 +214,7 @@ p5s
 
 ![Plot5](plot5.png) 
 
-
+Motor Vehicle-Related Emissions for Baltimore have fallen from 1999-2008.
 
 
 ### Question 6
